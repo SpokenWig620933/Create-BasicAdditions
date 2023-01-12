@@ -20,10 +20,8 @@ import net.minecraft.world.level.material.MaterialColor;
 
 public class Blocks extends net.minecraft.world.level.block.Blocks {
 	
-	//private static final ModInfo info = CreateBasicAdditionsMod.MODINFO;
-	private static final CreateRegistrate REGISTRATE = CreateBasicAdditionsMod.REGISTRATE.creativeModeTab(() -> CreateBasicAdditionsMod.MAIN_TAB);
+	private static final CreateRegistrate REGISTRATE = CreateBasicAdditionsMod.REGISTRATE;
 	
-	//public static final Block BRASS_GEARBOX = new BrassGearboxBlock(info, CreateBasicAdditionsMod.MAIN_TAB, "brass_gearbox");
 	public static final BlockEntry<BrassGearboxBlock> BRASS_GEARBOX = REGISTRATE.block("brass_gearbox", BrassGearboxBlock::new)
 			.lang("Brass Gearbox")
 			.initialProperties(SharedProperties::softMetal)

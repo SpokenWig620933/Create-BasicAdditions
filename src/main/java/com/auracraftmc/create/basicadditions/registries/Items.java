@@ -8,8 +8,7 @@ import com.tterrag.registrate.util.entry.ItemEntry;
 
 public class Items extends net.minecraft.world.item.Items {
 
-	//private static final ModInfo info = CreateBasicAdditionsMod.MODINFO;
-	private static final CreateRegistrate REGISTRATE = CreateBasicAdditionsMod.REGISTRATE.creativeModeTab(() -> CreateBasicAdditionsMod.MAIN_TAB);
+	private static final CreateRegistrate REGISTRATE = CreateBasicAdditionsMod.REGISTRATE;
 	
 	public static final ItemEntry<VerticalBrassGearboxItem> VERTICAL_BRASS_GEARBOX = REGISTRATE.item("vertical_brass_gearbox", VerticalBrassGearboxItem::new)
 			.lang("Vertical Brass Gearbox")

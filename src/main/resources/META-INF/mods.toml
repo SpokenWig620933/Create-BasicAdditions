@@ -21,7 +21,7 @@ issueTrackerURL="https://github.com/RedstoneGamer123/Create-BasicAdditions/issue
   [[dependencies.create_basic_additions]]
     modId="forge"
     mandatory=true
-    versionRange="[40.1.0,41.0.0)"
+    versionRange="[40.2.0,41.0.0)"
     ordering="NONE"
     side="BOTH"
 
