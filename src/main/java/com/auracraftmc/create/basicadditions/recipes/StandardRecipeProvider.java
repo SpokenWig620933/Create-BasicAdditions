@@ -51,6 +51,11 @@ public class StandardRecipeProvider extends RecipeProvider {
     			.requires(AllBlocks.ANDESITE_CASING.get())
     			.requires(AllBlocks.COGWHEEL.get())
     			.save(consumer);
+    	ShapelessRecipeBuilder.shapeless(AllBlocks.GEARSHIFT.get())
+    			.unlockedBy("has_item", inventoryTrigger(ItemPredicate.Builder.item().of(Blocks.BASIC_GEARSHIFT.get()).build()))
+    			.requires(Blocks.BASIC_GEARSHIFT.get())
+    			.requires(Items.REDSTONE)
+    			.save(consumer);
     }
     
     private void generateConversions(Consumer<FinishedRecipe> consumer) {
