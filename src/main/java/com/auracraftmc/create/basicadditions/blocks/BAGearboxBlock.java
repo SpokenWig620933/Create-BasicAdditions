@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.function.Supplier;
 import javax.annotation.Nonnull;
 
-import com.simibubi.create.content.contraptions.base.RotatedPillarKineticBlock;
-import com.simibubi.create.content.contraptions.relays.gearbox.GearboxTileEntity;
-import com.simibubi.create.foundation.block.ITE;
+import com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock;
+import com.simibubi.create.content.kinetics.gearbox.GearboxBlockEntity;
+import com.simibubi.create.foundation.block.IBE;
 import net.minecraft.core.*;
 import net.minecraft.core.Direction.Axis;
 import net.minecraft.world.entity.player.Player;
@@ -20,16 +20,17 @@ import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.storage.loot.LootContext.Builder;
 import net.minecraft.world.phys.HitResult;
 
-public class BAGearboxBlock extends RotatedPillarKineticBlock implements ITE<GearboxTileEntity> {
+public class BAGearboxBlock extends RotatedPillarKineticBlock implements IBE<GearboxBlockEntity> {
+
 	
 	private final Supplier<? extends BlockItem> verticalGearboxItem;
-	private final Supplier<? extends BlockEntityType<GearboxTileEntity>> gearboxTileEntity;
+	private final Supplier<? extends BlockEntityType<GearboxBlockEntity>> gearboxBlockEntity;
 	
-	public BAGearboxBlock(@Nonnull Properties properties, @Nonnull Supplier<? extends BlockItem> verticalGearboxItem, @Nonnull Supplier<? extends BlockEntityType<GearboxTileEntity>> gearboxTileEntity) {
+	public BAGearboxBlock(@Nonnull Properties properties, @Nonnull Supplier<? extends BlockItem> verticalGearboxItem, @Nonnull Supplier<? extends BlockEntityType<GearboxBlockEntity>> gearboxBlockEntity) {
 		super(properties);
 		
 		this.verticalGearboxItem = verticalGearboxItem;
-		this.gearboxTileEntity = gearboxTileEntity;
+		this.gearboxBlockEntity = gearboxBlockEntity;
 	}
 
 	@SuppressWarnings("deprecation")
@@ -83,13 +84,13 @@ public class BAGearboxBlock extends RotatedPillarKineticBlock implements ITE<Gea
 	
 	@Nonnull
 	@Override
-	public Class<GearboxTileEntity> getTileEntityClass() {
-		return GearboxTileEntity.class;
+	public Class<GearboxBlockEntity> getBlockEntityClass() {
+		return GearboxBlockEntity.class;
 	}
 	
 	@Nonnull
 	@Override
-	public BlockEntityType<? extends GearboxTileEntity> getTileEntityType() {
-		return this.gearboxTileEntity.get();
+	public BlockEntityType<? extends GearboxBlockEntity> getBlockEntityType() {
+		return this.gearboxBlockEntity.get();
 	}
 }

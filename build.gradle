@@ -28,7 +28,7 @@ println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getPro
 minecraft {
     // Mappings (official or parchment) is a matter of preference. Parchment does map some method parameters though while keeping Class-/Method-/Fieldnames same as official.
     //mappings channel: "official", version: "${minecraft_version}"
-    mappings channel: 'parchment', version: "${parchment_version}-${minecraft_version}" // https://ldtteam.jfrog.io/ui/native/parchmentmc-public/org/parchmentmc/data/parchment-1.18.2/
+    mappings channel: 'parchment', version: "${parchment_version}-${minecraft_version}" // https://ldtteam.jfrog.io/ui/repos/tree/General/parchmentmc-public/org/parchmentmc/data/parchment-1.18.2/
 
     runs {
         client {
