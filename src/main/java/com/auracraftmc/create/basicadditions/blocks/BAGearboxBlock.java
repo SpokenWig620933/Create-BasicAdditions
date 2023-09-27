@@ -22,7 +22,6 @@ import net.minecraft.world.phys.HitResult;
 
 public class BAGearboxBlock extends RotatedPillarKineticBlock implements IBE<GearboxBlockEntity> {
 
-	
 	private final Supplier<? extends BlockItem> verticalGearboxItem;
 	private final Supplier<? extends BlockEntityType<GearboxBlockEntity>> gearboxBlockEntity;
 	

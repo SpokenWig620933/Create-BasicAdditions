@@ -73,20 +73,15 @@
 			}
 		}
 	],
-	"groups": [
-		0,
-		1,
-		2,
+	"groups": [0, 1, 2,
 		{
 			"name": "shaft",
 			"origin": [8, 8, 8],
-			"color": 0,
 			"children": [3]
 		},
 		{
 			"name": "shaft",
 			"origin": [8, 8, 8],
-			"color": 0,
 			"children": [4]
 		}
 	]

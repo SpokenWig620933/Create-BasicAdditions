@@ -6,7 +6,7 @@ buildscript {
     }
     dependencies {
         classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-        classpath "org.parchmentmc:librarian:${librarian_version}"
+        classpath "org.parchmentmc:librarian:1.+"
     }
 }
 
@@ -18,9 +18,9 @@ plugins {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 
-group = "${group}"
-version = "${minecraft_version}-${mod_version}"
 archivesBaseName = modid
+version = "${minecraft_version}-${mod_version}-forge"
+group = "${group}"
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 

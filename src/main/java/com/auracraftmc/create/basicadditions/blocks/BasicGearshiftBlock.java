@@ -19,12 +19,12 @@ import net.minecraft.world.ticks.TickPriority;
 
 public class BasicGearshiftBlock extends AbstractEncasedShaftBlock implements IBE<SplitShaftBlockEntity> {
 
-	private final Supplier<BlockEntityType<? extends SplitShaftBlockEntity>> tileEntityType;
+	private final Supplier<BlockEntityType<? extends SplitShaftBlockEntity>> blockEntityType;
 	
-	public BasicGearshiftBlock(@Nonnull Properties properties, @Nonnull Supplier<BlockEntityType<? extends SplitShaftBlockEntity>> tileEntityType) {
+	public BasicGearshiftBlock(@Nonnull Properties properties, @Nonnull Supplier<BlockEntityType<? extends SplitShaftBlockEntity>> blockEntityType) {
 		super(properties);
 		
-		this.tileEntityType = tileEntityType;
+		this.blockEntityType = blockEntityType;
 	}
 	
 	@Nonnull
@@ -36,17 +36,17 @@ public class BasicGearshiftBlock extends AbstractEncasedShaftBlock implements IB
 	@Nonnull
 	@Override
 	public BlockEntityType<? extends SplitShaftBlockEntity> getBlockEntityType() {
-		return this.tileEntityType.get();
+		return this.blockEntityType.get();
 	}
 
 	public void detachKinetics(@Nonnull Level worldIn, @Nonnull BlockPos pos, boolean reAttachNextTick) {
 		BlockEntity te = worldIn.getBlockEntity(pos);
 		
-		if(!(te instanceof KineticBlockEntity)) return;
-		
-		RotationPropagator.handleRemoved(worldIn, pos, (KineticBlockEntity) te);
-
-		if(reAttachNextTick) worldIn.scheduleTick(pos, this, 0, TickPriority.EXTREMELY_HIGH);
+		if(te instanceof KineticBlockEntity kte) {
+			RotationPropagator.handleRemoved(worldIn, pos, kte);
+			
+			if(reAttachNextTick) worldIn.scheduleTick(pos, this, 0, TickPriority.EXTREMELY_HIGH);
+		}
 	}
 
 	@SuppressWarnings("deprecation")
@@ -54,8 +54,6 @@ public class BasicGearshiftBlock extends AbstractEncasedShaftBlock implements IB
 	public void tick(@Nonnull BlockState state, @Nonnull ServerLevel worldIn, @Nonnull BlockPos pos, @Nonnull Random random) {
 		BlockEntity te = worldIn.getBlockEntity(pos);
 		
-		if(!(te instanceof KineticBlockEntity kte)) return;
-		
-		RotationPropagator.handleAdded(worldIn, pos, kte);
+		if(te instanceof KineticBlockEntity kte) RotationPropagator.handleAdded(worldIn, pos, kte);
 	}
 }

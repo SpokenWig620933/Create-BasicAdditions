@@ -9,17 +9,17 @@ import net.minecraft.world.level.block.entity.BlockEntityType;
 
 public class BAGearshiftBlock extends GearshiftBlock {
 	
-	private final Supplier<? extends BlockEntityType<? extends SplitShaftBlockEntity>> tileEntityType;
+	private final Supplier<? extends BlockEntityType<? extends SplitShaftBlockEntity>> blockEntityType;
 	
-	public BAGearshiftBlock(@Nonnull Properties properties, @Nonnull Supplier<? extends BlockEntityType<? extends SplitShaftBlockEntity>> tileEntityType) {
+	public BAGearshiftBlock(@Nonnull Properties properties, @Nonnull Supplier<? extends BlockEntityType<? extends SplitShaftBlockEntity>> blockEntityType) {
 		super(properties);
 		
-		this.tileEntityType = tileEntityType;
+		this.blockEntityType = blockEntityType;
 	}
 	
 	@Nonnull
 	@Override
 	public BlockEntityType<? extends SplitShaftBlockEntity> getBlockEntityType() {
-		return this.tileEntityType.get();
+		return this.blockEntityType.get();
 	}
 }

@@ -18,5 +18,4 @@ public class BasicGearshiftBlockEntity extends SplitShaftBlockEntity {
 	public float getRotationSpeedModifier(@Nonnull Direction face) {
 		return (hasSource() && face != getSourceFacing()) ? -1 : 1;
 	}
-	
 }
