@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "create_basic_additions:brass_gearbox",
+    "create_basic_additions:brass_gearshift",
+    "create_basic_additions:basic_gearshift",
+    "create_basic_additions:basic_brass_gearshift"
+  ]
+}
