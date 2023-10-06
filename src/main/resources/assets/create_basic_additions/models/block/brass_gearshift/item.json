@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "block/block",
 	"textures": {
-		"0": "create_basic_additions:block/brass_gearshift",
+		"0": "create_basic_additions:block/brass_gearshift_off",
 		"1": "create_basic_additions:block/brass_gearbox",
 		"particle": "create:block/axis",
 		"1_0": "create:block/axis",

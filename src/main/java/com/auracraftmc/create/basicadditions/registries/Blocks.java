@@ -9,7 +9,6 @@ import com.simibubi.create.content.kinetics.gearbox.GearboxBlock;
 import com.simibubi.create.foundation.data.*;
 import com.tterrag.registrate.util.entry.BlockEntry;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MaterialColor;
 
 public class Blocks extends net.minecraft.world.level.block.Blocks {
@@ -19,8 +18,7 @@ public class Blocks extends net.minecraft.world.level.block.Blocks {
 	public static final BlockEntry<BAGearboxBlock> BRASS_GEARBOX = REGISTRATE.block("brass_gearbox", (prop) -> new BAGearboxBlock(prop, Items.VERTICAL_BRASS_GEARBOX, BlockEntities.BRASS_GEARBOX))
 			.lang("Brass Gearbox")
 			.initialProperties(SharedProperties::softMetal)
-			.properties(BlockBehaviour.Properties::noOcclusion)
-			.properties(p -> p.color(MaterialColor.TERRACOTTA_BROWN))
+			.properties(p -> p.noOcclusion().color(MaterialColor.TERRACOTTA_BROWN))
 			.transform(BlockStressDefaults.setNoImpact())
 			.transform(TagGen.axeOrPickaxe())
 			.onRegister(CreateRegistrate.connectedTextures(() -> new EncasedCTBehaviour(AllSpriteShifts.BRASS_CASING)))
@@ -32,7 +30,7 @@ public class Blocks extends net.minecraft.world.level.block.Blocks {
 	
 	public static final BlockEntry<BAGearshiftBlock> BRASS_GEARSHIFT = REGISTRATE.block("brass_gearshift", (prop) -> new BAGearshiftBlock(prop, BlockEntities.BRASS_GEARSHIFT))
 	        .lang("Brass Gearshift")
-	        .initialProperties(SharedProperties::stone)
+	        .initialProperties(SharedProperties::softMetal)
 	        .properties(p -> p.noOcclusion().color(MaterialColor.TERRACOTTA_BROWN))
 	        .addLayer(() -> RenderType::cutoutMipped)
 	        .transform(BlockStressDefaults.setNoImpact())
@@ -56,7 +54,7 @@ public class Blocks extends net.minecraft.world.level.block.Blocks {
 	
 	public static final BlockEntry<BasicGearshiftBlock> BASIC_BRASS_GEARSHIFT = REGISTRATE.block("basic_brass_gearshift", (prop) -> new BasicGearshiftBlock(prop, BlockEntities.BASIC_BRASS_GEARSHIFT::get))
 	        .lang("Basic Brass Gearshift")
-	        .initialProperties(SharedProperties::stone)
+	        .initialProperties(SharedProperties::softMetal)
 	        .properties(p -> p.noOcclusion().color(MaterialColor.TERRACOTTA_BROWN))
 	        .addLayer(() -> RenderType::cutoutMipped)
 	        .transform(BlockStressDefaults.setNoImpact())

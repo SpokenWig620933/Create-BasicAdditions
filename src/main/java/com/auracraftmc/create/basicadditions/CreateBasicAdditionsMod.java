@@ -21,7 +21,7 @@ public class CreateBasicAdditionsMod {
 
 	public static final String MODID = "create_basic_additions";
 	public static final String NAME = "Create: Basic Additions";
-	public static final String VERSION = "1.1.1";
+	public static final String VERSION = "1.1.1b";
 
 	public static CreateBasicAdditionsMod instance;
 	public static final Logger logger = LogUtils.getLogger();
@@ -47,8 +47,6 @@ public class CreateBasicAdditionsMod {
 	public void gatherData(GatherDataEvent event) {
 		DataGenerator gen = event.getGenerator();
 
-		if(event.includeServer()) {
-			gen.addProvider(new StandardRecipeProvider(gen));
-		}
+		if(event.includeServer()) gen.addProvider(new StandardRecipeProvider(gen));
 	}
 }

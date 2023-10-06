@@ -7,7 +7,7 @@ issueTrackerURL="https://github.com/RedstoneGamer123/Create-BasicAdditions/issue
 [[mods]]
   modId="create_basic_additions"
   displayName="Create: Basic Additions"
-  version="1.1.1"
+  version="1.1.1b"
 
   updateJSONURL="https://github.com/RedstoneGamer123/Create-BasicAdditions/blob/forge-1.18.2/update.json"
   displayURL="https://www.curseforge.com/minecraft/mc-mods/create-basic-additions"
