@@ -3,23 +3,23 @@ package com.auracraftmc.create.basicadditions.blocks;
 import java.util.function.Supplier;
 import javax.annotation.Nonnull;
 
-import com.simibubi.create.content.contraptions.relays.encased.GearshiftBlock;
-import com.simibubi.create.content.contraptions.relays.encased.SplitShaftTileEntity;
+import com.simibubi.create.content.kinetics.transmission.GearshiftBlock;
+import com.simibubi.create.content.kinetics.transmission.SplitShaftBlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 
 public class BAGearshiftBlock extends GearshiftBlock {
 	
-	private final Supplier<? extends BlockEntityType<? extends SplitShaftTileEntity>> tileEntityType;
+	private final Supplier<? extends BlockEntityType<? extends SplitShaftBlockEntity>> blockEntityType;
 	
-	public BAGearshiftBlock(@Nonnull Properties properties, @Nonnull Supplier<? extends BlockEntityType<? extends SplitShaftTileEntity>> tileEntityType) {
+	public BAGearshiftBlock(@Nonnull Properties properties, @Nonnull Supplier<? extends BlockEntityType<? extends SplitShaftBlockEntity>> blockEntityType) {
 		super(properties);
 		
-		this.tileEntityType = tileEntityType;
+		this.blockEntityType = blockEntityType;
 	}
 	
 	@Nonnull
 	@Override
-	public BlockEntityType<? extends SplitShaftTileEntity> getTileEntityType() {
-		return this.tileEntityType.get();
+	public BlockEntityType<? extends SplitShaftBlockEntity> getBlockEntityType() {
+		return this.blockEntityType.get();
 	}
 }

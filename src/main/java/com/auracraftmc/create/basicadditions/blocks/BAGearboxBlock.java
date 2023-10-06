@@ -5,9 +5,9 @@ import java.util.function.Supplier;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
-import com.simibubi.create.content.contraptions.base.RotatedPillarKineticBlock;
-import com.simibubi.create.content.contraptions.relays.gearbox.GearboxTileEntity;
-import com.simibubi.create.foundation.block.ITE;
+import com.simibubi.create.content.kinetics.base.RotatedPillarKineticBlock;
+import com.simibubi.create.content.kinetics.gearbox.GearboxBlockEntity;
+import com.simibubi.create.foundation.block.IBE;
 import net.fabricmc.fabric.api.block.BlockPickInteractionAware;
 import net.minecraft.core.*;
 import net.minecraft.core.Direction.Axis;
@@ -22,16 +22,16 @@ import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.storage.loot.LootContext.Builder;
 import net.minecraft.world.phys.HitResult;
 
-public class BAGearboxBlock extends RotatedPillarKineticBlock implements ITE<GearboxTileEntity>, BlockPickInteractionAware {
+public class BAGearboxBlock extends RotatedPillarKineticBlock implements IBE<GearboxBlockEntity>, BlockPickInteractionAware {
 
 	private final Supplier<? extends BlockItem> verticalGearboxItem;
-	private final Supplier<? extends BlockEntityType<GearboxTileEntity>> tileEntityType;
+	private final Supplier<? extends BlockEntityType<GearboxBlockEntity>> blockEntityType;
 	
-	public BAGearboxBlock(@Nonnull Properties properties, @Nonnull Supplier<? extends BlockItem> verticalGearboxItem, @Nonnull Supplier<? extends BlockEntityType<GearboxTileEntity>> tileEntityType) {
+	public BAGearboxBlock(@Nonnull Properties properties, @Nonnull Supplier<? extends BlockItem> verticalGearboxItem, @Nonnull Supplier<? extends BlockEntityType<GearboxBlockEntity>> blockEntityType) {
 		super(properties);
 		
 		this.verticalGearboxItem = verticalGearboxItem;
-		this.tileEntityType = tileEntityType;
+		this.blockEntityType = blockEntityType;
 	}
 
 	@SuppressWarnings("deprecation")
@@ -86,13 +86,12 @@ public class BAGearboxBlock extends RotatedPillarKineticBlock implements ITE<Gea
 	
 	@Nonnull
 	@Override
-	public Class<GearboxTileEntity> getTileEntityClass() {
-		return GearboxTileEntity.class;
+	public Class<GearboxBlockEntity> getBlockEntityClass() {
+		return GearboxBlockEntity.class;
 	}
 	
 	@Nonnull
-	@Override
-	public BlockEntityType<? extends GearboxTileEntity> getTileEntityType() {
-		return this.tileEntityType.get();
+	public BlockEntityType<? extends GearboxBlockEntity> getBlockEntityType() {
+		return this.blockEntityType.get();
 	}
 }
