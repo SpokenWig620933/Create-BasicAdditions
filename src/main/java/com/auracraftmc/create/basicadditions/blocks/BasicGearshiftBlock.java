@@ -12,7 +12,6 @@ import com.simibubi.create.foundation.block.IBE;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.ticks.TickPriority;
@@ -40,9 +39,7 @@ public class BasicGearshiftBlock extends AbstractEncasedShaftBlock implements IB
 	}
 
 	public void detachKinetics(@Nonnull Level worldIn, @Nonnull BlockPos pos, boolean reAttachNextTick) {
-		BlockEntity te = worldIn.getBlockEntity(pos);
-		
-		if(te instanceof KineticBlockEntity kte) {
+		if(worldIn.getBlockEntity(pos) instanceof KineticBlockEntity kte) {
 			RotationPropagator.handleRemoved(worldIn, pos, kte);
 			
 			if(reAttachNextTick) worldIn.scheduleTick(pos, this, 0, TickPriority.EXTREMELY_HIGH);
@@ -52,8 +49,6 @@ public class BasicGearshiftBlock extends AbstractEncasedShaftBlock implements IB
 	@SuppressWarnings("deprecation")
 	@Override
 	public void tick(@Nonnull BlockState state, @Nonnull ServerLevel worldIn, @Nonnull BlockPos pos, @Nonnull Random random) {
-		BlockEntity te = worldIn.getBlockEntity(pos);
-		
-		if(te instanceof KineticBlockEntity kte) RotationPropagator.handleAdded(worldIn, pos, kte);
+		if(worldIn.getBlockEntity(pos) instanceof KineticBlockEntity kte) RotationPropagator.handleAdded(worldIn, pos, kte);
 	}
 }

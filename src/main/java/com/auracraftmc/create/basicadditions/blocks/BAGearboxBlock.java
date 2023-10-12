@@ -68,8 +68,6 @@ public class BAGearboxBlock extends RotatedPillarKineticBlock implements IBE<Gea
 		return defaultBlockState().setValue(AXIS, Axis.Y);
 	}
 
-	// IRotate:
-
 	@Override
 	public boolean hasShaftTowards(@Nonnull LevelReader world, @Nonnull BlockPos pos, @Nonnull BlockState state, @Nonnull Direction face) {
 		return face.getAxis() != state.getValue(AXIS);
