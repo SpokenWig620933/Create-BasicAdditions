@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "${modid}",
+	"version": "${version}",
+	"name": "Create: Basic Additions",
+	"description": "Basic additions to the Create Mod.",
+	"authors": [
+		"SpokenWig620933"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/create-basic-additions",
+		"sources": "https://github.com/RedstoneGamer123/Create-BasicAdditions/tree/fabric-1.18.x",
+		"issues": "https://github.com/RedstoneGamer123/Create-BasicAdditions/issues"
+	},
+	"license": "https://github.com/RedstoneGamer123/Create-BasicAdditions/blob/efd0a6a23b10f5b5780800d9c18375939403b91e/LICENSE.txt",
+	"icon": "logo.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.auracraftmc.create.basicadditions.CreateBasicAdditionsMod"
+		],
+		"fabric-datagen": [
+			"com.auracraftmc.create.basicadditions.CreateBasicAdditionsData"
+		]
+	},
+	"depends": {
+		"java": ">=17",
+		"minecraft": "${minecraft_version}",
+		"fabricloader": ">=${fabric_loader_version}",
+		"fabric-api": ">=${fabric_api_version}",
+		"create": [
+			"0.5.0.i-1016+1.18.2",
+			"0.5.0.i-1002+1.18.2",
+			"0.5.0.i-988+1.18.2",
+			"0.5.0.i-979+1.18.2",
+			"0.5.0.i-963+1.18.2",
+			"0.5.0.i-960+1.18.2",
+			"0.5.0.i-944+1.18.2",
+			"0.5.0.i-921+1.18.2"
+		]
+	}
+}
