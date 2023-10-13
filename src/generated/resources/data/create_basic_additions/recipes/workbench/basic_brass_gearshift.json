@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "create:brass_casing"
+    },
+    {
+      "item": "create:cogwheel"
+    }
+  ],
+  "result": {
+    "item": "create_basic_additions:basic_brass_gearshift"
+  }
+}
