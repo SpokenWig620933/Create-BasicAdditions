@@ -16,7 +16,7 @@ public class CreateBasicAdditionsMod implements ModInitializer {
 	
 	public static final String MODID = "create_basic_additions";
 	public static final String NAME = "Create: Basic Additions";
-	public static final String VERSION = "1.1.0";
+	public static final String VERSION = "1.1.1";
 	
 	public static CreateBasicAdditionsMod instance;
 	public static final Logger logger = LoggerFactory.getLogger(NAME);
@@ -32,6 +32,7 @@ public class CreateBasicAdditionsMod implements ModInitializer {
 		Blocks.load();
 		Items.load();
 		BlockEntities.load();
+		Configs.register(MODID);
 		
 		REGISTRATE.register();
 	}

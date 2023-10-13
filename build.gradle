@@ -11,6 +11,8 @@ base {
 version = "${minecraft_version}-${mod_version}-fabric"
 group = maven_group
 
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
