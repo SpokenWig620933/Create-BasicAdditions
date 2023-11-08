@@ -8,6 +8,10 @@ assignees: RedstoneGamer123
 ---
 
 -------------------------
+**Version(s)** (The Minecraft version & Mod version.)
+MC-Ver: 1.14.0
+Mod-Ver: 1.0.0
+-------------------------
 **Describe the bug** (A clear and concise description of what the bug is.)
 
 -------------------------
