@@ -5,4 +5,4 @@
 <p>&nbsp;</p>
 <p>Forge &amp; Fabric available!<br /><span style="font-size: 10px;"><em>Have not tested on Quilt or other loaders, though they might work.</em></span></p>
 <p>&nbsp;</p>
-<p>Copyright 2023 [SpokenWig620933]</p>
+<p>Copyright 2024 [SpokenWig620933]</p>
