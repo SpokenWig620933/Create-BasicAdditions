@@ -1,0 +1,7 @@
+{
+	"parent": "create_basic_additions:block/railway_gearshift/block",
+    "textures": {
+        "0": "create_basic_additions:block/railway_gearshift_on",
+		"particle": "create_basic_additions:block/railway_gearshift_on"
+    }
+}

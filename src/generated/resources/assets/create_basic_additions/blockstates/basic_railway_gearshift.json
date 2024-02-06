@@ -1,0 +1,17 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "create_basic_additions:block/basic_railway_gearshift/block",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "create_basic_additions:block/basic_railway_gearshift/block"
+    },
+    "axis=z": {
+      "model": "create_basic_additions:block/basic_railway_gearshift/block",
+      "x": 90,
+      "y": 180
+    }
+  }
+}

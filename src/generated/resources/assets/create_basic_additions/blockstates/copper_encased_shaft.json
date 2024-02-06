@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "create_basic_additions:block/encased_shaft/copper/block",
+      "uvlock": true,
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "create_basic_additions:block/encased_shaft/copper/block",
+      "uvlock": true
+    },
+    "axis=z": {
+      "model": "create_basic_additions:block/encased_shaft/copper/block",
+      "uvlock": true,
+      "x": 90,
+      "y": 180
+    }
+  }
+}

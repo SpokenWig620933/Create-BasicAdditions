@@ -1,0 +1,20 @@
+{
+  "values": [
+    "create_basic_additions:copper_encased_shaft",
+    "create_basic_additions:railway_encased_shaft",
+    "create_basic_additions:copper_encased_cogwheel",
+    "create_basic_additions:railway_encased_cogwheel",
+    "create_basic_additions:copper_encased_large_cogwheel",
+    "create_basic_additions:railway_encased_large_cogwheel",
+    "create_basic_additions:brass_gearbox",
+    "create_basic_additions:copper_gearbox",
+    "create_basic_additions:railway_gearbox",
+    "create_basic_additions:brass_gearshift",
+    "create_basic_additions:copper_gearshift",
+    "create_basic_additions:railway_gearshift",
+    "create_basic_additions:basic_gearshift",
+    "create_basic_additions:basic_brass_gearshift",
+    "create_basic_additions:basic_copper_gearshift",
+    "create_basic_additions:basic_railway_gearshift"
+  ]
+}

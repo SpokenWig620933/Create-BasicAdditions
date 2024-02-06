@@ -1,0 +1,22 @@
+{
+  "block.create_basic_additions.basic_brass_gearshift": "ʇɟıɥsɹɐǝ⅁ ssɐɹᗺ ɔısɐᗺ",
+  "block.create_basic_additions.basic_copper_gearshift": "ʇɟıɥsɹɐǝ⅁ ɹǝddoƆ ɔısɐᗺ",
+  "block.create_basic_additions.basic_gearshift": "ʇɟıɥsɹɐǝ⅁ ɔısɐᗺ",
+  "block.create_basic_additions.basic_railway_gearshift": "ʇɟıɥsɹɐǝ⅁ uıɐɹ⟘ ɔısɐᗺ",
+  "block.create_basic_additions.brass_gearbox": "xoqɹɐǝ⅁ ssɐɹᗺ",
+  "block.create_basic_additions.brass_gearshift": "ʇɟıɥsɹɐǝ⅁ ssɐɹᗺ",
+  "block.create_basic_additions.copper_encased_cogwheel": "ןǝǝɥʍboƆ pǝsɐɔuƎ ɹǝddoƆ",
+  "block.create_basic_additions.copper_encased_large_cogwheel": "ןǝǝɥʍboƆ ǝbɹɐꞀ pǝsɐɔuƎ ɹǝddoƆ",
+  "block.create_basic_additions.copper_encased_shaft": "ʇɟɐɥS pǝsɐɔuƎ ɹǝddoƆ",
+  "block.create_basic_additions.copper_gearbox": "xoqɹɐǝ⅁ ɹǝddoƆ",
+  "block.create_basic_additions.copper_gearshift": "ʇɟıɥsɹɐǝ⅁ ɹǝddoƆ",
+  "block.create_basic_additions.railway_encased_cogwheel": "ןǝǝɥʍboƆ pǝsɐɔuƎ uıɐɹ⟘",
+  "block.create_basic_additions.railway_encased_large_cogwheel": "ןǝǝɥʍboƆ ǝbɹɐꞀ pǝsɐɔuƎ uıɐɹ⟘",
+  "block.create_basic_additions.railway_encased_shaft": "ʇɟɐɥS pǝsɐɔuƎ uıɐɹ⟘",
+  "block.create_basic_additions.railway_gearbox": "xoqɹɐǝ⅁ uıɐɹ⟘",
+  "block.create_basic_additions.railway_gearshift": "ʇɟıɥsɹɐǝ⅁ uıɐɹ⟘",
+  "item.create_basic_additions.vertical_brass_gearbox": "xoqɹɐǝ⅁ ssɐɹᗺ ןɐɔıʇɹǝΛ",
+  "item.create_basic_additions.vertical_copper_gearbox": "xoqɹɐǝ⅁ ɹǝddoƆ ןɐɔıʇɹǝΛ",
+  "item.create_basic_additions.vertical_railway_gearbox": "xoqɹɐǝ⅁ uıɐɹ⟘ ןɐɔıʇɹǝΛ",
+  "itemGroup.create_basic_additions.main": "suoıʇıppⱯ ɔısɐᗺ :ǝʇɐǝɹƆ"
+}

@@ -1,0 +1,22 @@
+{
+  "block.create_basic_additions.basic_brass_gearshift": "Basic Brass Gearshift",
+  "block.create_basic_additions.basic_copper_gearshift": "Basic Copper Gearshift",
+  "block.create_basic_additions.basic_gearshift": "Basic Gearshift",
+  "block.create_basic_additions.basic_railway_gearshift": "Basic Train Gearshift",
+  "block.create_basic_additions.brass_gearbox": "Brass Gearbox",
+  "block.create_basic_additions.brass_gearshift": "Brass Gearshift",
+  "block.create_basic_additions.copper_encased_cogwheel": "Copper Encased Cogwheel",
+  "block.create_basic_additions.copper_encased_large_cogwheel": "Copper Encased Large Cogwheel",
+  "block.create_basic_additions.copper_encased_shaft": "Copper Encased Shaft",
+  "block.create_basic_additions.copper_gearbox": "Copper Gearbox",
+  "block.create_basic_additions.copper_gearshift": "Copper Gearshift",
+  "block.create_basic_additions.railway_encased_cogwheel": "Train Encased Cogwheel",
+  "block.create_basic_additions.railway_encased_large_cogwheel": "Train Encased Large Cogwheel",
+  "block.create_basic_additions.railway_encased_shaft": "Train Encased Shaft",
+  "block.create_basic_additions.railway_gearbox": "Train Gearbox",
+  "block.create_basic_additions.railway_gearshift": "Train Gearshift",
+  "item.create_basic_additions.vertical_brass_gearbox": "Vertical Brass Gearbox",
+  "item.create_basic_additions.vertical_copper_gearbox": "Vertical Copper Gearbox",
+  "item.create_basic_additions.vertical_railway_gearbox": "Vertical Train Gearbox",
+  "itemGroup.create_basic_additions.main": "Create: Basic Additions"
+}
