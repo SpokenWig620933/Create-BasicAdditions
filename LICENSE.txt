@@ -8,9 +8,10 @@ The Project "Author" is ONLY SpokenWig620933/Redstone Gamer123, they are one ent
 
 2) You May NOT:
 * Release modified versions of this project without explicit permission from the Author, this includes community packs
-(You may have a private pack that you only use with a couple friends/family members, but this does NOT allow private distribution to fans or other entities).
+(You may have a private pack that you only use with a scarce amount friends/family members, but this does NOT allow private distribution to fans or any other entities).
 * Sell or reupload the project in anyway, shape, or form.
-* Claim ownership of the project.
+(This does not include free community packs, as long as appropriate credit is given).
+* Claim ownership, or a share, of the project.
 
 3) Contribution:
 * By submitting work to this project you grant this project full rights to the submitted work.
