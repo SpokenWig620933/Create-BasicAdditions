@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "b": {
+      "item": "create:railway_casing"
+    },
+    "c": {
+      "item": "create:cogwheel"
+    }
+  },
+  "pattern": [
+    " c ",
+    "cbc",
+    " c "
+  ],
+  "result": {
+    "item": "create_basic_additions:railway_gearbox"
+  },
+  "show_notification": true
+}

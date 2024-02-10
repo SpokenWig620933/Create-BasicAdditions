@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "create_basic_additions:railway_gearbox"
+    }
+  ],
+  "result": {
+    "item": "create_basic_additions:vertical_railway_gearbox"
+  }
+}

@@ -35,12 +35,6 @@ public class BlockEntities {
 	        .renderer(() -> EncasedCogRenderer::large)
 	        .register();
 	
-	/*public static final BlockEntityEntry<FluidPipeBlockEntity> ENCASED_FLUID_PIPE = REGISTRATE.blockEntity("encased_fluid_pipe", FluidPipeBlockEntity::new)
-	        .instance(() -> )
-	        .validBlocksDeferred()
-	        .renderer(() -> )
-	        .register();*/
-	
 	public static final BlockEntityEntry<GearboxBlockEntity> GEARBOX = REGISTRATE.blockEntity("gearbox", GearboxBlockEntity::new)
 			.instance(() -> GearboxInstance::new, false)
 			.validBlocksDeferred(BAGearboxBlock.getEncasedBlocks())

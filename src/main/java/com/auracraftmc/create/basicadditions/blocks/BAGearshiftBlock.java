@@ -51,8 +51,6 @@ public class BAGearshiftBlock extends AbstractEncasedShaftBlock implements IBE<S
 	@SuppressWarnings("deprecation")
 	@Override
 	public void tick(@Nonnull BlockState state, @Nonnull ServerLevel worldIn, @Nonnull BlockPos pos, @Nonnull RandomSource random) {
-		if(!(worldIn.getBlockEntity(pos) instanceof KineticBlockEntity kbe)) return;
-		
-		RotationPropagator.handleAdded(worldIn, pos, kbe);
+		if(worldIn.getBlockEntity(pos) instanceof KineticBlockEntity kbe) RotationPropagator.handleAdded(worldIn, pos, kbe);
 	}
 }
