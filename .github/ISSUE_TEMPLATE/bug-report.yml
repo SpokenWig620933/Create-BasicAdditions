@@ -1,0 +1,107 @@
+name: Bug Report
+description: Create a Bug Report to help us improve the project
+title: "[BUG]: "
+labels: ["bug"]
+assignees:
+  - SpokenWig620933
+body:
+  - type: checkboxes
+    id: unique
+    attributes:
+      label: Is there a similar issue?
+      description: "Please check that there are no similar issues before continuing."
+      options:
+        - label: There are no similar issues
+          required: true
+    validations:
+      required: true
+  - type: dropdown
+    id: minecraft
+    attributes:
+      label: Minecraft Version
+      description: "What version of Minecraft are you using?"
+      options:
+        - 1.18.2
+        - 1.20.1
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: modloader
+    attributes:
+      label: Modloader
+      description: "What modloader are you using?"
+      options:
+        - Forge
+        - Fabric
+        - Neoforge
+        - Quilt
+        - Other
+      default: 0
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "If 'Other', what modloader?"
+      description: "The name of the modloader you used during the issue."
+      placeholder: Rift
+    validations:
+      required: false
+  - type: dropdown
+    id: version
+    attributes:
+      label: Mod Version
+      description: "What version of the mod are you using?"
+      options:
+        - 1.0.0
+        - 1.0.1
+        - 1.0.1a
+        - 1.1.0
+        - 1.1.1
+        - 1.1.1b
+        - 1.1.2
+        - 1.1.2a
+        - 1.1.3
+  - type: input
+    id: create
+    attributes:
+      label: Create Version
+      description: "What version of Create are you using?
+      placeholder: 0.5.1f
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Logs
+      description: "The latest.log containing the error, if there is one."
+      placeholder: latest.log
+    validations:
+      required: false
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the Bug
+      description: "A clear and concise description of what the bug is. Provide screenshots as necessary."
+      placeholder: All the textures are missing.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: "How did this bug happen and what do I do to reproduce it?"
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: textarea
+    id: expectation
+    attributes:
+      label: Expected Behavior (Optional)
+      description: "A clear and concise description of what you expected to happen."
+      placeholder: Nice textures everywhere.
+    validations:
+      required: false
